@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<body>
+
+<h:head>
+	 <h:outputStylesheet library="css" name="default.css"/>
+</h:head>
+
+<!-- Inclusão do Arquivo header -->
+<div id="header">
+<!-- Caminho da Página Header que estamos carregando -->
+	<ui:include src="header.xhtml"/>
+</div>
+
+
+<!-- Usaremos para adicionar nossas páginas em tempo de execução -->
+<div id ="content" style="margin-top: 5%;">
+	<ui:insert name ="content">
+	</ui:insert>
+</div>
+
+<!-- Carregamento da Página Footer  -->
+<div id="footer">
+<!-- Caminho do arquivo Footer -->
+	<ui:include src="footer.xhtml"/>
+</div>
+
+</h:head>
+</body>
+
+
+
+<!--  Padrão Gerado pelo Eclipse -->
+<!-- <ui:composition template="">
+	<ui:define name="header">
+	    Add your header here or delete to use the default
+	</ui:define>
+	<ui:define name="content">
+	    Add your content here or delete to use the default
+	</ui:define>
+	<ui:define name="footer">
+	    Add your footer here or delete to use the default
+	</ui:define>
+</ui:composition>
+</html>
+ -->
